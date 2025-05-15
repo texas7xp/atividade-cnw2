@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol Brasil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #006400;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #228B22;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        footer {
+            background-color: #006400;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        button {
+            background-color: #228B22;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #006400;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Futebol Brasil</h1>
+    <p>O esporte mais amado do país</p>
+</header>
+
+<nav>
+    <a href="#historia">História</a>
+    <a href="#times">Times</a>
+    <a href="#jogadores">Jogadores</a>
+</nav>
+
+<main>
+    <section id="historia">
+        <h2>História do Futebol</h2>
+        <p>O futebol chegou ao Brasil no final do século XIX e logo se tornou o esporte mais popular do país. 
+           Desde então, o Brasil conquistou 5 Copas do Mundo e revelou alguns dos maiores jogadores da história.</p>
+    </section>
+
+    <section id="times">
+        <h2>Times Famosos</h2>
+        <ul>
+            <li>Flamengo</li>
+            <li>Corinthians</li>
+            <li>São Paulo</li>
+            <li>Palmeiras</li>
+            <li>Grêmio</li>
+        </ul>
+    </section>
+
+    <section id="jogadores">
+        <h2>Jogadores Lendários</h2>
+        <p>Alguns dos maiores nomes do futebol brasileiro:</p>
+        <ul>
+            <li>Pelé</li>
+            <li>Zico</li>
+            <li>Romário</li>
+            <li>Ronaldo Fenômeno</li>
+            <li>Neymar</li>
+        </ul>
+        <button onclick="mostrarMensagem()">Ver mensagem especial</button>
+        <p id="mensagem"></p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Futebol Brasil. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    function mostrarMensagem() {
+        document.getElementById("mensagem").innerText = "O futebol une paixões e faz história!";
+    }
+</script>
+
+</body>
+</html>
